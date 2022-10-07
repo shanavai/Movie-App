@@ -1,16 +1,14 @@
 import { signOut } from "firebase/auth";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux"; 
 import { logout, selectUser } from "../features/userSlice";
 import { auth } from "../firebase";
-import Nav from "../Nav";
+import Nav from "../components/Nav";
 import "./ProfilePage.css";
 
 function ProfilePage() {
   const dispatch = useDispatch();
-  const user = useSelector(selectUser);
-  const navigate = useNavigate();
+  const user = useSelector(selectUser); 
   console.log("user", user.user);
 
   const signingOut = () => {

@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import "./SignUpPage.css";
+import "./SignPage.css"
 import {auth , createUserWithEmailAndPassword, signInWithEmailAndPassword }from "../firebase" 
  
-const SignUpPage = () => {
+const SignPage = () => {
 
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
@@ -56,4 +56,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default SignPage;

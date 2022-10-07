@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "../Banner";
+import Banner from "../components/Banner";
 import "./HomePage.css";
-import Nav from "../Nav";
-import Row from "../Row";
+import Nav from "../components/Nav";
+import Row from "../components/Row";
 import requests from "../Requests";
 
 const HomePage = () => {

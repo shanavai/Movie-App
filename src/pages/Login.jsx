@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./LoginPage.css"; 
-import SignUpPage from "./SignUpPage";
+import SignPage from "./SignPage"; 
+import './LoginPage.css'
 
 const Login = () => {
   const [signIn, setSignIn] = useState(false);
@@ -21,7 +21,7 @@ const Login = () => {
       </div>
       <div className="loginPage__body">
         {signIn ? (
-          <SignUpPage/>
+          <SignPage/>
         ):(
            <>
             <h1>Unlimited films, tv programmes and more.</h1>
@@ -32,8 +32,7 @@ const Login = () => {
             </h3>
 
             <div className="loginPage__input">
-              <form>
-                <input type="email" placeholder="Email Address" />
+              <form> 
                 <button
                   onClick={() => setSignIn(true)}
                   className="loginPage__getStarted"
